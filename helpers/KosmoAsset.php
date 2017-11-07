@@ -18,7 +18,7 @@ class KosmoAsset extends BaseKosmoAsset
         'assets/fonts/open-sans/styles.css',
         'assets/fonts/weather/css/weather-icons.min.css',
         'assets/styles/common.min.css',
-        'assets/styles/themes/',
+        'assets/styles/themes/sidebar-black.min.css',
         'assets/styles/themes/primary.min.css',
     ];
     public $js = [
