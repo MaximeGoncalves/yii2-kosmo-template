@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "renj1e\\src\\": ""
+            "renj1e\\": ""
         }
     }
 }
