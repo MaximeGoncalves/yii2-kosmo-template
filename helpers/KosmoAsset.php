@@ -12,30 +12,32 @@ class KosmoAsset extends BaseKosmoAsset
 {
     public $sourcePath = '@vendor/renj1e/yii2-kosmo-template/src/';
     public $css = [
-        'assets/styles/common.min.css',
-        'assets/styles/themes/sidebar-black.min.css',
-        'assets/styles/themes/primary.min.css',
-        'assets/styles/widgets/panels.min.css',
-        'assets/styles/widgets/payment.min.css',
-        'assets/fonts/kosmo/styles.css',
-        'assets/fonts/line-awesome/css/line-awesome.min.css',
-        'assets/fonts/montserrat/styles.css',
+        'libs/bootstrap/css/bootstrap.min.css',
+        'libs/font-awesome/css/font-awesome.min.css',
         'assets/fonts/open-sans/styles.css',
-        'assets/fonts/weather/css/weather-icons.min.css',
-        'libs/flag-icon-css/css/flag-icon.min.css',
+        'libs/tether/css/tether.min.css',
         'libs/jscrollpane/jquery.jscrollpane.css',
-        'libs/c3js/c3.min.css',
-        'libs/noty/noty.css',
-        'assets/styles/dashboard/tabbed-sidebar.min.css',
+        'libs/flag-icon-css/css/flag-icon.min.css',
+        'assets/styles/common.min.css',
+
+        'assets/styles/themes/primary.min.css',
+        'assets/styles/themes/sidebar-black.min.css',
     ];
     public $js = [
+        'libs/responsejs/response.min.js',
+        'libs/loading-overlay/loadingoverlay.min.js',
+        'libs/tether/js/tether.min.js',
+        'libs/bootstrap/js/bootstrap.min.js'
+        'libs/jscrollpane/jquery.jscrollpane.min.js',
+        'libs/jscrollpane/jquery.mousewheel.js',
+        'libs/flexibility/flexibility.js',
+        
         'assets/scripts/common.min.js',
-        'assets/scripts/kosmo.widget-controls.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
-        'yii\bootstrap\BootstrapPluginAsset',
+        // 'yii\bootstrap\BootstrapAsset',
+        // 'yii\bootstrap\BootstrapPluginAsset',
     ];
     
     /**
