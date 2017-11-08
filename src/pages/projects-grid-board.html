@@ -4,18 +4,15 @@
 <!-- BEGIN HEAD -->
 <head>
     <meta charset="UTF-8">
-    <title>KOSMO - Multi Purpose Bootstrap 4 Admin Template</title>
+    <title>Kosmo Bootstrap 4 Admin Template &amp; UI Framework</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/fonts/line-awesome/css/line-awesome.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="assets/fonts/open-sans/styles.css">-->
-
-    <link rel="stylesheet" type="text/css" href="assets/fonts/montserrat/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/open-sans/styles.css">
     <link rel="stylesheet" type="text/css" href="libs/tether/css/tether.min.css">
     <link rel="stylesheet" type="text/css" href="libs/jscrollpane/jquery.jscrollpane.css">
     <link rel="stylesheet" type="text/css" href="libs/flag-icon-css/css/flag-icon.min.css">
@@ -24,7 +21,6 @@
 
     <!-- BEGIN THEME STYLES -->
     <link rel="stylesheet" type="text/css" href="assets/styles/themes/primary.min.css">
-    <link class="ks-sidebar-dark-style" rel="stylesheet" type="text/css" href="assets/styles/themes/sidebar-black.min.css">
     <!-- END THEME STYLES -->
 
 <link rel="stylesheet" type="text/css" href="assets/styles/apps/projects/grid-board.min.css">
@@ -32,7 +28,7 @@
 </head>
 <!-- END HEAD -->
 
-<body class="ks-navbar-fixed ks-sidebar-default ks-sidebar-position-fixed ks-page-header-fixed ks-theme-primary ks-page-loading"> <!-- remove ks-page-header-fixed to unfix header -->
+<body class="ks-navbar-fixed ks-sidebar-default ks-sidebar-fixed ks-theme-primary ks-page-loading">
 
     <!-- BEGIN HEADER -->
 <nav class="navbar ks-navbar">
@@ -40,92 +36,56 @@
     <!-- BEGIN LOGO -->
     <div href="index.html" class="navbar-brand">
         <!-- BEGIN RESPONSIVE SIDEBAR TOGGLER -->
-        <a href="#" class="ks-sidebar-toggle"><i class="ks-icon la la-bars" aria-hidden="true"></i></a>
-        <a href="#" class="ks-sidebar-mobile-toggle"><i class="ks-icon la la-bars" aria-hidden="true"></i></a>
+        <a href="#" class="ks-sidebar-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a href="#" class="ks-sidebar-mobile-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <!-- END RESPONSIVE SIDEBAR TOGGLER -->
+        <a href="index.html" class="ks-logo">Kosmo</a>
 
-        <div class="ks-navbar-logo">
-            <a href="index.html" class="ks-logo">Kosmo</a>
-
-            <!-- BEGIN GRID NAVIGATION -->
-            <!--<span class="nav-item dropdown ks-dropdown-grid">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                <div class="dropdown-menu ks-info ks-scrollable" aria-labelledby="Preview" data-height="260">
-                    <div class="ks-scroll-wrapper">
-                        <a href="#" class="ks-grid-item">
-                            <span class="ks-icon la la-dashboard"></span>
-                            <span class="ks-text">Dashboard</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <span class="ks-icon la la-flask"></span>
-                            <span class="ks-text">Projects</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <span class="ks-icon la la-globe"></span>
-                            <span class="ks-text">Form</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <span class="ks-icon la la-calendar-o"></span>
-                            <span class="ks-text">Calendar</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <span class="ks-icon la la-ticket"></span>
-                            <span class="ks-text">Tickets</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <span class="ks-icon la la-dashboard"></span>
-                            <span class="ks-text">Profile</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <span class="ks-icon la la-dashboard"></span>
-                            <span class="ks-text">Documentation</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <span class="ks-icon la la-dashboard"></span>
-                            <span class="ks-text">FAQ</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <span class="ks-icon la la-dashboard"></span>
-                            <span class="ks-text">Components</span>
-                        </a>
-                    </div>
+        <!-- BEGIN GRID NAVIGATION -->
+        <span class="nav-item dropdown ks-dropdown-grid">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+            <div class="dropdown-menu ks-info ks-scrollable" aria-labelledby="Preview" data-height="260">
+                <div class="ks-scroll-wrapper">
+                    <a href="#" class="ks-grid-item">
+                        <span class="ks-icon fa fa-dashboard"></span>
+                        <span class="ks-text">Dashboard</span>
+                    </a>
+                    <a href="#" class="ks-grid-item">
+                        <span class="ks-icon fa fa-flask"></span>
+                        <span class="ks-text">Projects</span>
+                    </a>
+                    <a href="#" class="ks-grid-item">
+                        <span class="ks-icon fa fa-globe"></span>
+                        <span class="ks-text">Form</span>
+                    </a>
+                    <a href="#" class="ks-grid-item">
+                        <span class="ks-icon fa fa-calendar-o"></span>
+                        <span class="ks-text">Calendar</span>
+                    </a>
+                    <a href="#" class="ks-grid-item">
+                        <span class="ks-icon fa fa-ticket"></span>
+                        <span class="ks-text">Tickets</span>
+                    </a>
+                    <a href="#" class="ks-grid-item">
+                        <span class="ks-icon fa fa-dashboard"></span>
+                        <span class="ks-text">Profile</span>
+                    </a>
+                    <a href="#" class="ks-grid-item">
+                        <span class="ks-icon fa fa-dashboard"></span>
+                        <span class="ks-text">Documentation</span>
+                    </a>
+                    <a href="#" class="ks-grid-item">
+                        <span class="ks-icon fa fa-dashboard"></span>
+                        <span class="ks-text">FAQ</span>
+                    </a>
+                    <a href="#" class="ks-grid-item">
+                        <span class="ks-icon fa fa-dashboard"></span>
+                        <span class="ks-text">Components</span>
+                    </a>
                 </div>
-            </span>-->
-
-            <span class="nav-item dropdown ks-dropdown-grid-images">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                <div class="dropdown-menu ks-info ks-scrollable" aria-labelledby="Preview" data-height="260">
-                    <div class="ks-scroll-wrapper">
-                        <a href="#" class="ks-grid-item">
-                            <img class="ks-icon" src="assets/img/menu-grid/dashboard.png">
-                            <span class="ks-text">Dashboard</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <img class="ks-icon" src="assets/img/menu-grid/flask.png">
-                            <span class="ks-text">Projects</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <img class="ks-icon" src="assets/img/menu-grid/calendar.png">
-                            <span class="ks-text">Calendar</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <img class="ks-icon" src="assets/img/menu-grid/profile.png">
-                            <span class="ks-text">Profile</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <img class="ks-icon" src="assets/img/menu-grid/ticket.png">
-                            <span class="ks-text">Tickets</span>
-                        </a>
-                        <a href="#" class="ks-grid-item">
-                            <img class="ks-icon" src="assets/img/menu-grid/settings.png">
-                            <span class="ks-text">Settings</span>
-                        </a>
-                    </div>
-                </div>
-            </span>
-
-            <!-- END GRID NAVIGATION -->
-        </div>
+            </div>
+        </span>
+        <!-- END GRID NAVIGATION -->
     </div>
     <!-- END LOGO -->
 
@@ -136,17 +96,17 @@
             <div class="ks-navbar-menu">
                 <form class="ks-search-form">
                     <a class="ks-search-open" href="#">
-                        <span class="la la-search"></span>
+                        <span class="fa fa-search"></span>
                     </a>
                     <div class="ks-wrapper">
                         <div class="input-icon icon-right icon icon-lg icon-color-primary">
                             <input id="input-group-icon-text" type="text" class="form-control" placeholder="Search...">
                             <span class="icon-addon">
-                                <span class="la la-search ks-icon"></span>
+                                <span class="fa fa-search ks-icon"></span>
                             </span>
                         </div>
                         <a class="ks-search-close" href="#">
-                            <span class="la la-close"></span>
+                            <span class="fa fa-close"></span>
                         </a>
                     </div>
                 </form>
@@ -172,7 +132,7 @@
                     </div>
                 </div>
                 <div class="nav-item nav-link ks-btn-action">
-                    <a class="btn btn-info" href="https://themeforest.net/item/kosmo-multi-purpose-responsive-bootstrap-4-admin-template-ui-framework/19506620?ref=themesanytime">Buy Now!</a>
+                    <a class="btn btn-info" href="#">Create</a>
                 </div>
             </div>
             <!-- END NAVBAR MENU -->
@@ -259,15 +219,15 @@
                 <!-- BEGIN NAVBAR MESSAGES -->
                 <div class="nav-item dropdown ks-messages">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                        <span class="la la-envelope ks-icon" aria-hidden="true">
+                        <span class="fa fa-envelope ks-icon" aria-hidden="true">
                             <span class="badge badge-pill badge-info">3</span>
                         </span>
                         <span class="ks-text">Messages</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Preview">
                         <section class="ks-tabs-actions">
-                            <a href="#"><i class="la la-plus ks-icon"></i></a>
-                            <a href="#"><i class="la la-search ks-icon"></i></a>
+                            <a href="#"><i class="fa fa-plus ks-icon"></i></a>
+                            <a href="#"><i class="fa fa-search ks-icon"></i></a>
                         </section>
                         <ul class="nav nav-tabs ks-nav-tabs ks-info" role="tablist">
                             <li class="nav-item">
@@ -342,7 +302,7 @@
                 <!-- BEGIN NAVBAR NOTIFICATIONS -->
                 <div class="nav-item dropdown ks-notifications">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                        <span class="la la-bell ks-icon" aria-hidden="true">
+                        <span class="fa fa-bell ks-icon" aria-hidden="true">
                             <span class="badge badge-pill badge-info">7</span>
                         </span>
                         <span class="ks-text">Notifications</span>
@@ -368,14 +328,14 @@
                                         </div>
                                         <div class="ks-info">
                                             <div class="ks-user-name">Emily Carter <span class="ks-description">has uploaded 1 file</span></div>
-                                            <div class="ks-text"><span class="la la-file-text-o ks-icon"></span> logo vector doc</div>
+                                            <div class="ks-text"><span class="fa fa-file-text-o ks-icon"></span> logo vector doc</div>
                                             <div class="ks-datetime">1 minute ago</div>
                                         </div>
                                     </a>
                                     <a href="#" class="ks-notification">
                                         <div class="ks-action">
                                             <span class="ks-default">
-                                                <span class="la la-briefcase ks-icon"></span>
+                                                <span class="fa fa-briefcase ks-icon"></span>
                                             </span>
                                         </div>
                                         <div class="ks-info">
@@ -387,12 +347,12 @@
                                     <a href="#" class="ks-notification">
                                         <div class="ks-action">
                                             <span class="ks-error">
-                                                <span class="la la-times-circle ks-icon"></span>
+                                                <span class="fa fa-times-circle ks-icon"></span>
                                             </span>
                                         </div>
                                         <div class="ks-info">
                                             <div class="ks-user-name">File upload error</div>
-                                            <div class="ks-text"><span class="la la-file-text-o ks-icon"></span> logo vector doc</div>
+                                            <div class="ks-text"><span class="fa fa-file-text-o ks-icon"></span> logo vector doc</div>
                                             <div class="ks-datetime">10 minutes ago</div>
                                         </div>
                                     </a>
@@ -426,19 +386,19 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Preview">
                         <a class="dropdown-item" href="#">
-                            <span class="la la-user ks-icon"></span>
+                            <span class="fa fa-user-circle-o ks-icon"></span>
                             <span>Profile</span>
                         </a>
                         <a class="dropdown-item" href="#">
-                            <span class="la la-wrench ks-icon" aria-hidden="true"></span>
+                            <span class="fa fa-wrench ks-icon" aria-hidden="true"></span>
                             <span>Settings</span>
                         </a>
                         <a class="dropdown-item" href="#">
-                            <span class="la la-question-circle ks-icon" aria-hidden="true"></span>
+                            <span class="fa fa-question-circle ks-icon" aria-hidden="true"></span>
                             <span>Help</span>
                         </a>
                         <a class="dropdown-item" href="#">
-                            <span class="la la-sign-out ks-icon" aria-hidden="true"></span>
+                            <span class="fa fa-sign-out ks-icon" aria-hidden="true"></span>
                             <span>Logout</span>
                         </a>
                     </div>
@@ -451,8 +411,8 @@
         <!-- BEGIN NAVBAR ACTIONS TOGGLER -->
         <nav class="nav navbar-nav ks-navbar-actions-toggle">
             <a class="nav-item nav-link" href="#">
-                <span class="la la-ellipsis-h ks-icon ks-open"></span>
-                <span class="la la-close ks-icon ks-close"></span>
+                <span class="fa fa-ellipsis-h ks-icon ks-open"></span>
+                <span class="fa fa-close ks-icon ks-close"></span>
             </a>
         </nav>
         <!-- END NAVBAR ACTIONS TOGGLER -->
@@ -460,8 +420,8 @@
         <!-- BEGIN NAVBAR MENU TOGGLER -->
         <nav class="nav navbar-nav ks-navbar-menu-toggle">
             <a class="nav-item nav-link" href="#">
-                <span class="la la-th ks-icon ks-open"></span>
-                <span class="la la-close ks-icon ks-close"></span>
+                <span class="fa fa-th ks-icon ks-open"></span>
+                <span class="fa fa-close ks-icon ks-close"></span>
             </a>
         </nav>
         <!-- END NAVBAR MENU TOGGLER -->
@@ -476,11 +436,11 @@
 
 
 
-<div class="ks-page-container">
+<div class="ks-container">
     
     <!-- BEGIN DEFAULT SIDEBAR -->
 <div class="ks-column ks-sidebar ks-info">
-    <div class="ks-wrapper ks-sidebar-wrapper">
+    <div class="ks-wrapper">
         <ul class="nav nav-pills nav-stacked">
             <li class="nav-item ks-user dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -497,20 +457,20 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-dashboard"></span>
+                    <span class="ks-icon fa fa-dashboard"></span>
                     <span>Dashboard</span>
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item ks-active" href="index.html">Default</a>
-                    <a class="dropdown-item" href="dashboards-draggable-widgets.html">Draggable Widgets</a>
+                    <a class="dropdown-item" href="index.html">Default</a>
                     <a class="dropdown-item" href="dashboards-mail.html">Mail</a>
                     <a class="dropdown-item" href="dashboards-projects.html">Projects</a>
                     <a class="dropdown-item" href="dashboards-widgets-and-activity.html">Activity</a>
+                    <a class="dropdown-item" href="dashboards-draggable-widgets.html">Draggable Widgets</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-cubes"></span>
+                    <span class="ks-icon fa fa-cubes"></span>
                     <span>Layouts</span>
                 </a>
                 <div class="dropdown-menu">
@@ -520,7 +480,6 @@
                             <span>Sidebar</span>
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="../sidebar_sections-primary/index.html" target="_blank">Sections</a>
                             <a class="dropdown-item" href="../sidebar_compact-primary/index.html" target="_blank">Compact</a>
                             <a class="dropdown-item" href="../sidebar_iconbar-primary/index.html" target="_blank">Iconbar</a>
                             <a class="dropdown-item" href="../sidebar_iconbar_compact-primary/index.html" target="_blank">Iconbar Compact</a>
@@ -539,23 +498,9 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-flask"></span>
+                    <span class="ks-icon fa fa-flask"></span>
                     <span>Apps</span>
                 </a>
-                <div class="dropdown-menu">
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span>CRM</span>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="crm-contacts.html">Contacts</a>
-                            <a class="dropdown-item" href="crm-user-contact-view.html">Contact View</a>
-                            <a class="dropdown-item" href="crm-users-list-view.html">Users List View</a>
-                            <a class="dropdown-item" href="crm-users-grid-view.html">Users Grid View</a>
-                            <a class="dropdown-item" href="crm-roles-and-permissions.html">Roles &amp; Permissions</a>
-                        </div>
-                    </div>
-                </div>
                 <div class="dropdown-menu">
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -651,15 +596,12 @@
                     </div>
                 </div>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="music-app.html">Music</a>
-                </div>
-                <div class="dropdown-menu">
                     <a class="dropdown-item" href="calendar.html">Calendar</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-toggle-off"></span>
+                    <span class="ks-icon fa fa-globe"></span>
                     <span>Form</span>
                 </a>
                 <div class="dropdown-menu">
@@ -669,7 +611,6 @@
                     <a class="dropdown-item" href="form-validation.html">Validation</a>
                     <a class="dropdown-item" href="form-touchspin.html">Touchspin</a>
                     <a class="dropdown-item" href="form-flex-labels.html">Flex Labels</a>
-                    <a class="dropdown-item" href="form-mask-input.html">Mask Input</a>
                     <a class="dropdown-item" href="form-autocomplete-and-tags.html">Autocomplete &amp; Tags</a>
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -684,14 +625,12 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-desktop"></span>
+                    <span class="ks-icon fa fa-desktop"></span>
                     <span>UI Kit</span>
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="uikit-bootstrap-ui.html">Bootstrap UI</a>
-                    <a class="dropdown-item" href="uikit-colors.html">Colors</a>
                     <a class="dropdown-item" href="uikit-typography.html">Typography</a>
-                    <a class="dropdown-item" href="uikit-cards.html">Cards</a>
                     <a class="dropdown-item" href="uikit-panels.html">Panels</a>
                     <a class="dropdown-item" href="uikit-tables.html">Tables</a>
                     <a class="dropdown-item" href="uikit-tabs.html">Tabs</a>
@@ -702,20 +641,11 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-sliders"></span>
+                    <span class="ks-icon fa fa-server"></span>
                     <span>Components</span>
                 </a>
                 <div class="dropdown-menu">
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span>File Upload</span>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="components-file-upload-uppy.html">Uppy</a>
-                            <a class="dropdown-item" href="components-file-upload-dropzone.html">DropZone</a>
-                            <a class="dropdown-item" href="components-file-upload-jquery-file-upload.html">Jquery File Upload</a>
-                        </div>
-                    </div>
+                    <a class="dropdown-item" href="components-file-upload.html">File Upload</a>
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             <span>Select</span>
@@ -723,17 +653,6 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="components-select-select2.html">Select2</a>
                             <a class="dropdown-item" href="components-select-multi.html">Multi</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span>Wysiwyg Editors</span>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="components-wysiwyg-editors-bootstrap-markdown-editor.html">Bootstrap Markdown</a>
-                            <a class="dropdown-item" href="components-wysiwyg-editors-simplemde-markdown-editor.html">SimpleMDE Markdown</a>
-                            <a class="dropdown-item" href="components-wysiwyg-editors-trumbowyg-editor.html">Trumbowyg Editor</a>
-                            <a class="dropdown-item" href="components-wysiwyg-editors-summernote-editor.html">Summernote Editor</a>
                         </div>
                     </div>
                     <a class="dropdown-item" href="components-alerts-and-confirm.html">Alerts &amp; Confirm</a>
@@ -755,7 +674,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-user"></span>
+                    <span class="ks-icon fa fa-vcard-o"></span>
                     <span>Profile</span>
                 </a>
                 <div class="dropdown-menu">
@@ -779,7 +698,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-th"></span>
+                    <span class="ks-icon fa fa-table"></span>
                     <span>DataTables</span>
                 </a>
                 <div class="dropdown-menu">
@@ -789,7 +708,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-puzzle-piece"><span class="badge badge-pill badge-pink ks-label">3</span></span>
+                    <span class="ks-icon fa fa-puzzle-piece"><span class="badge badge-pill badge-pink ks-label">3</span></span>
                     <span>Widgets</span>
                 </a>
                 <div class="dropdown-menu">
@@ -800,7 +719,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-file-text-o"></span>
+                    <span class="ks-icon fa fa-file-text-o"></span>
                     <span>Pages</span>
                 </a>
                 <div class="dropdown-menu">
@@ -817,7 +736,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-credit-card"></span>
+                    <span class="ks-icon fa fa-money"></span>
                     <span>Payment</span>
                 </a>
                 <div class="dropdown-menu">
@@ -829,7 +748,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-usd"></span>
+                    <span class="ks-icon fa fa-usd"></span>
                     <span>Pricing</span>
                 </a>
                 <div class="dropdown-menu">
@@ -839,19 +758,19 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="email-templates.html">
-                    <span class="ks-icon la la-envelope-o"></span>
+                    <span class="ks-icon fa fa-envelope-o"></span>
                     <span>Email Templates</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="documentation.html">
-                    <span class="ks-icon la la-book"></span>
+                    <span class="ks-icon fa fa-book"></span>
                     <span>Documentation</span>
                 </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="ks-icon la la-question-circle"></span>
+                    <span class="ks-icon fa fa-question-circle-o"></span>
                     <span>FAQ</span>
                 </a>
                 <div class="dropdown-menu">
@@ -859,33 +778,6 @@
                 </div>
             </li>
         </ul>
-        <div class="ks-sidebar-extras-block">
-            <div class="ks-extras-block-item">
-                <div class="ks-name">Monthly Badwidth Transfer</div>
-                <div class="ks-progress">
-                    <div class="progress ks-progress-xs">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 84%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="ks-description">
-                    <span class="ks-amount">84%</span>
-                    <span class="ks-text">(8 400 MB of 10 000)</span>
-                </div>
-            </div>
-            <div class="ks-extras-block-item">
-                <div class="ks-name">Disk Space Usage</div>
-                <div class="ks-progress">
-                    <div class="progress ks-progress-xs">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 36%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="ks-description">
-                    <span class="ks-amount">36%</span>
-                    <span class="ks-text">(3 600 MB of 10 000)</span>
-                </div>
-            </div>
-            <div class="ks-sidebar-copyright">© 2016 Kosmo. All right reserved</div>
-        </div>
     </div>
 </div>
 <!-- END DEFAULT SIDEBAR -->
@@ -898,31 +790,29 @@
 
 
 
-
-
     <div class="ks-column ks-page">
-        <div class="ks-page-header">
+        <div class="ks-header">
             <section class="ks-title">
                 <h3>Projects</h3>
             </section>
         </div>
 
-        <div class="ks-page-content">
-            <div class="ks-page-content-body ks-projects-grid-board">
-                <div class="ks-projects-grid-board-projects">
-                    <div class="ks-projects-grid-board-header">
+        <div class="ks-content">
+            <div class="ks-body ks-projects-grid-board">
+                <div class="ks-projects">
+                    <div class="ks-header">
                         <div class="ks-search">
                             <div class="input-icon icon-right icon icon-lg icon-color-primary">
-                                <input id="input-group-icon-text" type="text" class="form-control" placeholder="Search">
+                                <input id="input-group-icon-text" type="text" class="form-control" placeholder="Text">
                                 <span class="icon-addon">
-                                    <span class="la la-search"></span>
+                                    <span class="fa fa-search"></span>
                                 </span>
                             </div>
                         </div>
                         <div class="ks-controls">
                             <div class="dropdown ks-dropdown-filter">
                                 <button class="btn btn-primary-outline ks-light dropdown-toggle ks-no-text" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="la la-filter ks-icon"></span>
+                                    <span class="fa fa-filter ks-icon"></span>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                     <div class="ks-header">Filters</div>
@@ -952,21 +842,21 @@
                                 </div>
                             </div>
                             <button class="btn btn-primary">
-                                <span class="la la-plus ks-icon"></span>
+                                <span class="fa fa-plus ks-icon"></span>
                                 <span class="ks-text">Add project</span>
                             </button>
                         </div>
                     </div>
-                    <div class="ks-projects-grid-board-body ks-scrollable">
+                    <div class="ks-body ks-scrollable">
                         <div class="ks-scroll-wrapper ks-rows-section">
                             <div class="row">
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star ks-favorite ks-active"></a>
                                             <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <a class="dropdown-item" href="#">Edit</a>
@@ -975,7 +865,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ks-project-body">
+                                        <div class="ks-body">
                                             <a href="#" class="ks-name">
                                                 <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
                                                 <span class="ks-text">Project Name</span>
@@ -1030,11 +920,11 @@
                                             </div>
                                             <div class="ks-controls">
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
+                                                    <span class="fa fa-comment-o ks-icon"></span>
                                                     <span class="ks-amount">2</span>
                                                 </a>
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
+                                                    <span class="fa fa-file-o ks-icon"></span>
                                                     <span class="ks-amount">16</span>
                                                 </a>
                                             </div>
@@ -1043,11 +933,11 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star-o ks-favorite"></a>
                                             <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <a class="dropdown-item" href="#">Edit</a>
@@ -1056,7 +946,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ks-project-body">
+                                        <div class="ks-body">
                                             <a href="#" class="ks-name">
                                                 <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
                                                 <span class="ks-text">Project Name</span>
@@ -1111,11 +1001,11 @@
                                             </div>
                                             <div class="ks-controls">
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
+                                                    <span class="fa fa-comment-o ks-icon"></span>
                                                     <span class="ks-amount">2</span>
                                                 </a>
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
+                                                    <span class="fa fa-file-o ks-icon"></span>
                                                     <span class="ks-amount">16</span>
                                                 </a>
                                             </div>
@@ -1124,11 +1014,11 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star ks-favorite ks-active"></a>
                                             <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <a class="dropdown-item" href="#">Edit</a>
@@ -1137,7 +1027,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ks-project-body">
+                                        <div class="ks-body">
                                             <a href="#" class="ks-name">
                                                 <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
                                                 <span class="ks-text">Project Name</span>
@@ -1192,256 +1082,11 @@
                                             </div>
                                             <div class="ks-controls">
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
+                                                    <span class="fa fa-comment-o ks-icon"></span>
                                                     <span class="ks-amount">2</span>
                                                 </a>
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
-                                                    <span class="ks-amount">16</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-4 col-lg-12">
-                                    <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
-                                            <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Add Card</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ks-project-body">
-                                            <a href="#" class="ks-name">
-                                                <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
-                                                <span class="ks-text">Project Name</span>
-                                            </a>
-                                            <div class="ks-description">
-                                                Google is an American multinational technology company specializing in Internet-related services and products that include online advertising technologie…
-                                            </div>
-                                            <div class="ks-meta">
-                                                <div class="ks-item">
-                                                    <div class="ks-name">
-                                                        Deadline
-                                                    </div>
-                                                    <div class="ks-description">
-                                                        September 23, 2016
-                                                    </div>
-                                                </div>
-                                                <div class="ks-item">
-                                                    <div class="ks-name">
-                                                        Progress
-                                                    </div>
-                                                    <div class="ks-description">
-                                                        <div class="ks-progress ks-progress-inline">
-                                                            <div class="progress ks-progress-xs">
-                                                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                            <span class="ks-amount">75%</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ks-item ks-images">
-                                                    <div class="ks-name">
-                                                        Assigned to
-                                                    </div>
-                                                    <div class="ks-description">
-                                                        <a href="#" class="ks-image">
-                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-1.jpg" width="25" height="25">
-                                                        </a>
-                                                        <a href="#" class="ks-image">
-                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-5.jpg" width="25" height="25">
-                                                        </a>
-                                                        <a href="#" class="ks-image">
-                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-11.jpg" width="25" height="25">
-                                                        </a>
-                                                        <a href="#" class="ks-add">+</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="ks-tags">
-                                                <span class="badge badge-success-outline">Design</span>
-                                                <span class="badge badge-info-outline">Development</span>
-                                                <span class="badge badge-pink-outline">front-end</span>
-                                            </div>
-                                            <div class="ks-controls">
-                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
-                                                    <span class="ks-amount">2</span>
-                                                </a>
-                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
-                                                    <span class="ks-amount">16</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-12">
-                                    <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
-                                            <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Add Card</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ks-project-body">
-                                            <a href="#" class="ks-name">
-                                                <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
-                                                <span class="ks-text">Project Name</span>
-                                            </a>
-                                            <div class="ks-description">
-                                                Google is an American multinational technology company specializing in Internet-related services and products that include online advertising technologie…
-                                            </div>
-                                            <div class="ks-meta">
-                                                <div class="ks-item">
-                                                    <div class="ks-name">
-                                                        Deadline
-                                                    </div>
-                                                    <div class="ks-description">
-                                                        September 23, 2016
-                                                    </div>
-                                                </div>
-                                                <div class="ks-item">
-                                                    <div class="ks-name">
-                                                        Progress
-                                                    </div>
-                                                    <div class="ks-description">
-                                                        <div class="ks-progress ks-progress-inline">
-                                                            <div class="progress ks-progress-xs">
-                                                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                            <span class="ks-amount">75%</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ks-item ks-images">
-                                                    <div class="ks-name">
-                                                        Assigned to
-                                                    </div>
-                                                    <div class="ks-description">
-                                                        <a href="#" class="ks-image">
-                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-1.jpg" width="25" height="25">
-                                                        </a>
-                                                        <a href="#" class="ks-image">
-                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-5.jpg" width="25" height="25">
-                                                        </a>
-                                                        <a href="#" class="ks-image">
-                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-11.jpg" width="25" height="25">
-                                                        </a>
-                                                        <a href="#" class="ks-add">+</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="ks-tags">
-                                                <span class="badge badge-success-outline">Design</span>
-                                                <span class="badge badge-info-outline">Development</span>
-                                                <span class="badge badge-pink-outline">front-end</span>
-                                            </div>
-                                            <div class="ks-controls">
-                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
-                                                    <span class="ks-amount">2</span>
-                                                </a>
-                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
-                                                    <span class="ks-amount">16</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-12">
-                                    <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
-                                            <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Add Card</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ks-project-body">
-                                            <a href="#" class="ks-name">
-                                                <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
-                                                <span class="ks-text">Project Name</span>
-                                            </a>
-                                            <div class="ks-description">
-                                                Google is an American multinational technology company specializing in Internet-related services and products that include online advertising technologie…
-                                            </div>
-                                            <div class="ks-meta">
-                                                <div class="ks-item">
-                                                    <div class="ks-name">
-                                                        Deadline
-                                                    </div>
-                                                    <div class="ks-description">
-                                                        September 23, 2016
-                                                    </div>
-                                                </div>
-                                                <div class="ks-item">
-                                                    <div class="ks-name">
-                                                        Progress
-                                                    </div>
-                                                    <div class="ks-description">
-                                                        <div class="ks-progress ks-progress-inline">
-                                                            <div class="progress ks-progress-xs">
-                                                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                            <span class="ks-amount">75%</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ks-item ks-images">
-                                                    <div class="ks-name">
-                                                        Assigned to
-                                                    </div>
-                                                    <div class="ks-description">
-                                                        <a href="#" class="ks-image">
-                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-1.jpg" width="25" height="25">
-                                                        </a>
-                                                        <a href="#" class="ks-image">
-                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-5.jpg" width="25" height="25">
-                                                        </a>
-                                                        <a href="#" class="ks-image">
-                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-11.jpg" width="25" height="25">
-                                                        </a>
-                                                        <a href="#" class="ks-add">+</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="ks-tags">
-                                                <span class="badge badge-success-outline">Design</span>
-                                                <span class="badge badge-info-outline">Development</span>
-                                                <span class="badge badge-pink-outline">front-end</span>
-                                            </div>
-                                            <div class="ks-controls">
-                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
-                                                    <span class="ks-amount">2</span>
-                                                </a>
-                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
+                                                    <span class="fa fa-file-o ks-icon"></span>
                                                     <span class="ks-amount">16</span>
                                                 </a>
                                             </div>
@@ -1452,11 +1097,11 @@
                             <div class="row">
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star ks-favorite ks-active"></a>
                                             <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <a class="dropdown-item" href="#">Edit</a>
@@ -1465,7 +1110,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ks-project-body">
+                                        <div class="ks-body">
                                             <a href="#" class="ks-name">
                                                 <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
                                                 <span class="ks-text">Project Name</span>
@@ -1520,11 +1165,11 @@
                                             </div>
                                             <div class="ks-controls">
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
+                                                    <span class="fa fa-comment-o ks-icon"></span>
                                                     <span class="ks-amount">2</span>
                                                 </a>
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
+                                                    <span class="fa fa-file-o ks-icon"></span>
                                                     <span class="ks-amount">16</span>
                                                 </a>
                                             </div>
@@ -1533,11 +1178,11 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star-o ks-favorite"></a>
                                             <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <a class="dropdown-item" href="#">Edit</a>
@@ -1546,7 +1191,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ks-project-body">
+                                        <div class="ks-body">
                                             <a href="#" class="ks-name">
                                                 <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
                                                 <span class="ks-text">Project Name</span>
@@ -1601,11 +1246,11 @@
                                             </div>
                                             <div class="ks-controls">
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
+                                                    <span class="fa fa-comment-o ks-icon"></span>
                                                     <span class="ks-amount">2</span>
                                                 </a>
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
+                                                    <span class="fa fa-file-o ks-icon"></span>
                                                     <span class="ks-amount">16</span>
                                                 </a>
                                             </div>
@@ -1614,11 +1259,11 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star ks-favorite ks-active"></a>
                                             <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <a class="dropdown-item" href="#">Edit</a>
@@ -1627,7 +1272,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ks-project-body">
+                                        <div class="ks-body">
                                             <a href="#" class="ks-name">
                                                 <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
                                                 <span class="ks-text">Project Name</span>
@@ -1682,11 +1327,11 @@
                                             </div>
                                             <div class="ks-controls">
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
+                                                    <span class="fa fa-comment-o ks-icon"></span>
                                                     <span class="ks-amount">2</span>
                                                 </a>
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
+                                                    <span class="fa fa-file-o ks-icon"></span>
                                                     <span class="ks-amount">16</span>
                                                 </a>
                                             </div>
@@ -1697,11 +1342,11 @@
                             <div class="row">
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star ks-favorite ks-active"></a>
                                             <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <a class="dropdown-item" href="#">Edit</a>
@@ -1710,7 +1355,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ks-project-body">
+                                        <div class="ks-body">
                                             <a href="#" class="ks-name">
                                                 <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
                                                 <span class="ks-text">Project Name</span>
@@ -1765,11 +1410,11 @@
                                             </div>
                                             <div class="ks-controls">
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
+                                                    <span class="fa fa-comment-o ks-icon"></span>
                                                     <span class="ks-amount">2</span>
                                                 </a>
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
+                                                    <span class="fa fa-file-o ks-icon"></span>
                                                     <span class="ks-amount">16</span>
                                                 </a>
                                             </div>
@@ -1778,11 +1423,11 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star-o ks-favorite"></a>
                                             <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <a class="dropdown-item" href="#">Edit</a>
@@ -1791,7 +1436,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ks-project-body">
+                                        <div class="ks-body">
                                             <a href="#" class="ks-name">
                                                 <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
                                                 <span class="ks-text">Project Name</span>
@@ -1846,11 +1491,11 @@
                                             </div>
                                             <div class="ks-controls">
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
+                                                    <span class="fa fa-comment-o ks-icon"></span>
                                                     <span class="ks-amount">2</span>
                                                 </a>
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
+                                                    <span class="fa fa-file-o ks-icon"></span>
                                                     <span class="ks-amount">16</span>
                                                 </a>
                                             </div>
@@ -1859,11 +1504,11 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-12">
                                     <div class="card panel panel-default ks-project">
-                                        <div class="ks-project-header">
-                                            <a href="#" class="la la-star ks-favorite ks-active"></a>
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star ks-favorite ks-active"></a>
                                             <div class="dropdown ks-control">
-                                                <a class="btn btn-link ks-no-text ks-no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="la la-ellipsis-h ks-icon"></span>
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                     <a class="dropdown-item" href="#">Edit</a>
@@ -1872,7 +1517,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ks-project-body">
+                                        <div class="ks-body">
                                             <a href="#" class="ks-name">
                                                 <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
                                                 <span class="ks-text">Project Name</span>
@@ -1927,11 +1572,256 @@
                                             </div>
                                             <div class="ks-controls">
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                    <span class="la la-comment-o ks-icon"></span>
+                                                    <span class="fa fa-comment-o ks-icon"></span>
                                                     <span class="ks-amount">2</span>
                                                 </a>
                                                 <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
-                                                    <span class="la la-file-o ks-icon"></span>
+                                                    <span class="fa fa-file-o ks-icon"></span>
+                                                    <span class="ks-amount">16</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="card panel panel-default ks-project">
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star ks-favorite ks-active"></a>
+                                            <div class="dropdown ks-control">
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Add Card</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ks-body">
+                                            <a href="#" class="ks-name">
+                                                <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
+                                                <span class="ks-text">Project Name</span>
+                                            </a>
+                                            <div class="ks-description">
+                                                Google is an American multinational technology company specializing in Internet-related services and products that include online advertising technologie…
+                                            </div>
+                                            <div class="ks-meta">
+                                                <div class="ks-item">
+                                                    <div class="ks-name">
+                                                        Deadline
+                                                    </div>
+                                                    <div class="ks-description">
+                                                        September 23, 2016
+                                                    </div>
+                                                </div>
+                                                <div class="ks-item">
+                                                    <div class="ks-name">
+                                                        Progress
+                                                    </div>
+                                                    <div class="ks-description">
+                                                        <div class="ks-progress ks-progress-inline">
+                                                            <div class="progress ks-progress-xs">
+                                                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                            <span class="ks-amount">75%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ks-item ks-images">
+                                                    <div class="ks-name">
+                                                        Assigned to
+                                                    </div>
+                                                    <div class="ks-description">
+                                                        <a href="#" class="ks-image">
+                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-1.jpg" width="25" height="25">
+                                                        </a>
+                                                        <a href="#" class="ks-image">
+                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-5.jpg" width="25" height="25">
+                                                        </a>
+                                                        <a href="#" class="ks-image">
+                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-11.jpg" width="25" height="25">
+                                                        </a>
+                                                        <a href="#" class="ks-add">+</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ks-tags">
+                                                <span class="badge badge-success-outline">Design</span>
+                                                <span class="badge badge-info-outline">Development</span>
+                                                <span class="badge badge-pink-outline">front-end</span>
+                                            </div>
+                                            <div class="ks-controls">
+                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
+                                                    <span class="fa fa-comment-o ks-icon"></span>
+                                                    <span class="ks-amount">2</span>
+                                                </a>
+                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
+                                                    <span class="fa fa-file-o ks-icon"></span>
+                                                    <span class="ks-amount">16</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="card panel panel-default ks-project">
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star-o ks-favorite"></a>
+                                            <div class="dropdown ks-control">
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Add Card</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ks-body">
+                                            <a href="#" class="ks-name">
+                                                <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
+                                                <span class="ks-text">Project Name</span>
+                                            </a>
+                                            <div class="ks-description">
+                                                Google is an American multinational technology company specializing in Internet-related services and products that include online advertising technologie…
+                                            </div>
+                                            <div class="ks-meta">
+                                                <div class="ks-item">
+                                                    <div class="ks-name">
+                                                        Deadline
+                                                    </div>
+                                                    <div class="ks-description">
+                                                        September 23, 2016
+                                                    </div>
+                                                </div>
+                                                <div class="ks-item">
+                                                    <div class="ks-name">
+                                                        Progress
+                                                    </div>
+                                                    <div class="ks-description">
+                                                        <div class="ks-progress ks-progress-inline">
+                                                            <div class="progress ks-progress-xs">
+                                                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                            <span class="ks-amount">75%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ks-item ks-images">
+                                                    <div class="ks-name">
+                                                        Assigned to
+                                                    </div>
+                                                    <div class="ks-description">
+                                                        <a href="#" class="ks-image">
+                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-1.jpg" width="25" height="25">
+                                                        </a>
+                                                        <a href="#" class="ks-image">
+                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-5.jpg" width="25" height="25">
+                                                        </a>
+                                                        <a href="#" class="ks-image">
+                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-11.jpg" width="25" height="25">
+                                                        </a>
+                                                        <a href="#" class="ks-add">+</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ks-tags">
+                                                <span class="badge badge-success-outline">Design</span>
+                                                <span class="badge badge-info-outline">Development</span>
+                                                <span class="badge badge-pink-outline">front-end</span>
+                                            </div>
+                                            <div class="ks-controls">
+                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
+                                                    <span class="fa fa-comment-o ks-icon"></span>
+                                                    <span class="ks-amount">2</span>
+                                                </a>
+                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
+                                                    <span class="fa fa-file-o ks-icon"></span>
+                                                    <span class="ks-amount">16</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <div class="card panel panel-default ks-project">
+                                        <div class="ks-header">
+                                            <a href="#" class="fa fa-star ks-favorite ks-active"></a>
+                                            <div class="dropdown ks-control">
+                                                <a class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="fa fa-ellipsis-h ks-icon"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Add Card</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ks-body">
+                                            <a href="#" class="ks-name">
+                                                <img src="assets/img/avatars/avatar-7.jpg" width="55" height="55" class="ks-image">
+                                                <span class="ks-text">Project Name</span>
+                                            </a>
+                                            <div class="ks-description">
+                                                Google is an American multinational technology company specializing in Internet-related services and products that include online advertising technologie…
+                                            </div>
+                                            <div class="ks-meta">
+                                                <div class="ks-item">
+                                                    <div class="ks-name">
+                                                        Deadline
+                                                    </div>
+                                                    <div class="ks-description">
+                                                        September 23, 2016
+                                                    </div>
+                                                </div>
+                                                <div class="ks-item">
+                                                    <div class="ks-name">
+                                                        Progress
+                                                    </div>
+                                                    <div class="ks-description">
+                                                        <div class="ks-progress ks-progress-inline">
+                                                            <div class="progress ks-progress-xs">
+                                                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                            <span class="ks-amount">75%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ks-item ks-images">
+                                                    <div class="ks-name">
+                                                        Assigned to
+                                                    </div>
+                                                    <div class="ks-description">
+                                                        <a href="#" class="ks-image">
+                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-1.jpg" width="25" height="25">
+                                                        </a>
+                                                        <a href="#" class="ks-image">
+                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-5.jpg" width="25" height="25">
+                                                        </a>
+                                                        <a href="#" class="ks-image">
+                                                            <img class="ks-avatar" src="assets/img/avatars/avatar-11.jpg" width="25" height="25">
+                                                        </a>
+                                                        <a href="#" class="ks-add">+</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ks-tags">
+                                                <span class="badge badge-success-outline">Design</span>
+                                                <span class="badge badge-info-outline">Development</span>
+                                                <span class="badge badge-pink-outline">front-end</span>
+                                            </div>
+                                            <div class="ks-controls">
+                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
+                                                    <span class="fa fa-comment-o ks-icon"></span>
+                                                    <span class="ks-amount">2</span>
+                                                </a>
+                                                <a href="#" class="ks-control" data-toggle="tooltip" data-placement="top" title="" data-original-title="Documents">
+                                                    <span class="fa fa-file-o ks-icon"></span>
                                                     <span class="ks-amount">16</span>
                                                 </a>
                                             </div>
@@ -1942,9 +1832,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="ks-projects-grid-board-tasks">
-                    <div class="ks-projects-grid-board-tasks-list">
-                        <div class="ks-projects-grid-board-tasks-header">
+                <div class="ks-tasks">
+                    <div class="ks-list">
+                        <div class="ks-header">
                             <span class="ks-text">Today’s tasks</span>
                             <div class="ks-progress ks-progress-inline">
                                 <div class="progress ks-progress-xs">
@@ -1953,8 +1843,8 @@
                                 <span class="ks-amount">75%</span>
                             </div>
                         </div>
-                        <div class="ks-projects-grid-board-tasks-body ks-scrollable">
-                            <div class="jspPane-padding">
+                        <div class="ks-body ks-scrollable">
+                            <div>
                                 <label class="custom-control custom-checkbox ks-checkbox ks-checkbox-success">
                                     <input type="checkbox" class="custom-control-input">
                                     <span class="custom-control-indicator"></span>
@@ -2028,7 +1918,7 @@
                             </div>
                         </div>
                     </div>
-                    <table class="ks-projects-grid-board-tasks-statistics">
+                    <table class="ks-statistics">
                         <tr>
                             <td rowspan="2" class="ks-chart">
                                 <div id="ks-projects-progress-chart" class="ks-radial-progress-chart ks-purple"></div>
@@ -2060,8 +1950,6 @@
 <script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
 <script src="libs/jscrollpane/jquery.mousewheel.js"></script>
 <script src="libs/flexibility/flexibility.js"></script>
-<script src="libs/noty/noty.min.js"></script>
-<script src="libs/velocity/velocity.min.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 
 <!-- BEGIN THEME LAYOUT SCRIPTS -->
@@ -2096,13 +1984,13 @@
 <!-- BEGIN SETTINGS BLOCK -->
 <div class="ks-settings-slide-block">
     <a class="ks-settings-slide-control">
-        <span class="ks-icon la la-cog"></span>
+        <span class="ks-icon fa fa-cog"></span>
     </a>
 
     <div class="ks-header">
         <span class="ks-text">Layout Options</span>
         <a class="ks-settings-slide-close-control">
-            <span class="ks-icon la la-close"></span>
+            <span class="ks-icon fa fa-close"></span>
         </a>
     </div>
 
@@ -2122,7 +2010,6 @@
         <a href="../default-oslo-gray/index.html" class="ks-theme ks-oslo-gray-royal-blue"></a>
         <a href="../default-astronaut-blue/index.html" class="ks-theme ks-astronaut-blue-persian-green"></a>
         <a href="../default-old-brick/index.html" class="ks-theme ks-old-brick"></a>
-        <a href="../default-white/index.html" class="ks-theme ks-white"></a>
     </div>
 
     <ul class="ks-settings-list">
@@ -2130,33 +2017,6 @@
             <span class="ks-text">Collapsed Sidebar</span>
             <label class="ks-checkbox-slider ks-on-off ks-primary ks-sidebar-checkbox-toggle">
                 <input type="checkbox" value="1">
-                <span class="ks-indicator"></span>
-                <span class="ks-on">On</span>
-                <span class="ks-off">Off</span>
-            </label>
-        </li>
-        <li>
-            <span class="ks-text">Fixed page header</span>
-            <label class="ks-checkbox-slider ks-on-off ks-primary ks-page-header-checkbox-toggle">
-                <input type="checkbox" value="0" checked>
-                <span class="ks-indicator"></span>
-                <span class="ks-on">On</span>
-                <span class="ks-off">Off</span>
-            </label>
-        </li>
-        <li>
-            <span class="ks-text">Dark/Light Sidebar</span>
-            <label class="ks-checkbox-slider ks-on-off ks-primary ks-sidebar-style-checkbox-toggle">
-                <input type="checkbox" value="0" checked>
-                <span class="ks-indicator"></span>
-                <span class="ks-on">On</span>
-                <span class="ks-off">Off</span>
-            </label>
-        </li>
-        <li>
-            <span class="ks-text">White/Gray Content Background</span>
-            <label class="ks-checkbox-slider ks-on-off ks-primary ks-content-bg-checkbox-toggle">
-                <input type="checkbox" value="0" checked>
                 <span class="ks-indicator"></span>
                 <span class="ks-on">On</span>
                 <span class="ks-off">Off</span>

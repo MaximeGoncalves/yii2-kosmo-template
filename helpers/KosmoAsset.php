@@ -12,14 +12,21 @@ class KosmoAsset extends BaseKosmoAsset
 {
     public $sourcePath = '@vendor/renj1e/yii2-kosmo-template/src/';
     public $css = [
+        'assets/styles/common.min.css',
+        'assets/styles/themes/sidebar-black.min.css',
+        'assets/styles/themes/primary.min.css',
+        'assets/styles/widgets/panels.min.css',
+        'assets/styles/widgets/payment.min.css',
         'assets/fonts/kosmo/styles.css',
         'assets/fonts/line-awesome/css/line-awesome.min.css',
         'assets/fonts/montserrat/styles.css',
         'assets/fonts/open-sans/styles.css',
         'assets/fonts/weather/css/weather-icons.min.css',
-        'assets/styles/common.min.css',
-        'assets/styles/themes/sidebar-black.min.css',
-        'assets/styles/themes/primary.min.css',
+        'libs/flag-icon-css/css/flag-icon.min.css',
+        'libs/jscrollpane/jquery.jscrollpane.css',
+        'libs/c3js/c3.min.css',
+        'libs/noty/noty.css',
+        'assets/styles/dashboard/tabbed-sidebar.min.css',
     ];
     public $js = [
         'assets/scripts/common.min.js',

@@ -17,7 +17,7 @@
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     src: local('Open Sans SemiBold'), local('OpenSans-Semibold'),
     url('OpenSans-Semibold.ttf') format('truetype');
 }
