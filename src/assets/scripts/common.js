@@ -5,7 +5,7 @@
      * Default overlay settings
      */
     $.LoadingOverlaySetup({
-        image: "assets/img/loaders/page-loader-ring-lg-primary.gif",
+        image: $('html').attr('data-bundle-loader'),
         /*image       : "",
          fontawesome : "fa fa-refresh fa-spin",*/
         zIndex: 1,
